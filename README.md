@@ -1,4 +1,4 @@
-#NameChangeTool
+# NameChangeTool
 
 ## このツールは複数のファイルを連番に名前変更するプログラムです。  
 
