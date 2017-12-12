@@ -15,8 +15,8 @@ end
 	test1()
 # init process
 	 uname = `whoami`.chomp.to_s
-	 system("rm -f /home/#{uname}/namechangetool/.filenamelist.txt")
-	 system("ls -t > /home/#{uname}/namechangetool/.filenamelist.txt")
+	 system("rm -f /home/#{uname}/NameChangeTool/.filenamelist.txt")
+	 system("ls -t > /home/#{uname}/NameChangeTool/.filenamelist.txt")
 	 num = 0
 begin
 	puts "このフォルダーに名前を変更したいファイルを入れましたか？:Y,N"
@@ -30,7 +30,7 @@ begin
 			io.each do |object|	
 				num += 1
 			 # core process
-			 system("mv /home/#{uname}/namechangetool/#{object.chomp} /home/#{uname}/namechangetool/#{format("%06d",num).chomp}#{chain.chomp}#{extension}")
+			 system("mv /home/#{uname}/NameChangeTool/#{object.chomp} /home/#{uname}/NameChangeTool/#{format("%06d",num).chomp}#{chain.chomp}#{extension}")
 			 # display process out
 			 p "mv #{object} #{format('%06d',num)}#{chain.chomp}#{extension}"
 			end
