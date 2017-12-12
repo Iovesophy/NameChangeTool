@@ -11,6 +11,16 @@
 まず、連番にしたいfileをnamechangetoolディレクトリに入れてください。  
 その際namechangetoolにファイルが入っていないことを確認してください。  
 データが上書きされる恐れがあります。  
+次にプログラムの実行でコマンドラインに
 
-kazuyayuda
+``` 
+ $ ruby .processor.rb  
+```
+と実行してください。
+
+0埋めが六桁で連番にrenameされます。  
+データは必ずバックアップを取ってから実行してください。  
+filenameを元に戻すことは現在のバージョンではできません。  
+
+Iovesophy (kazuyayuda1@gmail.com)
 
