@@ -4,7 +4,7 @@
 	 uname = `whoami`.chomp.to_s
 	 system("rm -f /home/#{uname}/NameChangeTool/.filenamelist.txt")
 	 system("ls | sort -n > /home/#{uname}/NameChangeTool/.filenamelist.txt")
-	 num = 0
+	 num = -1
 begin
 	puts "このフォルダーに名前を変更したいファイルを入れましたか？:Y,N"
 	conf = gets.chomp.to_s
